@@ -33,6 +33,7 @@ namespace Chess
             this.panel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonFigurePaint = new System.Windows.Forms.Button();
+            this.buttonDemo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel
@@ -47,29 +48,44 @@ namespace Chess
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 23);
+            this.button1.Size = new System.Drawing.Size(93, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "PaintDesk";
+            this.button1.Text = "Paint Desk";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.buttonDeskChange);
             // 
             // buttonFigurePaint
             // 
+            this.buttonFigurePaint.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonFigurePaint.Location = new System.Drawing.Point(200, 12);
             this.buttonFigurePaint.Name = "buttonFigurePaint";
-            this.buttonFigurePaint.Size = new System.Drawing.Size(82, 23);
+            this.buttonFigurePaint.Size = new System.Drawing.Size(108, 23);
             this.buttonFigurePaint.TabIndex = 1;
             this.buttonFigurePaint.Text = "Paint Figure";
             this.buttonFigurePaint.UseVisualStyleBackColor = true;
             this.buttonFigurePaint.Click += new System.EventHandler(this.buttonFigurePaint_Click);
+            // 
+            // buttonDemo
+            // 
+            this.buttonDemo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDemo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDemo.Location = new System.Drawing.Point(423, 12);
+            this.buttonDemo.Name = "buttonDemo";
+            this.buttonDemo.Size = new System.Drawing.Size(70, 23);
+            this.buttonDemo.TabIndex = 2;
+            this.buttonDemo.Text = "Demo";
+            this.buttonDemo.UseVisualStyleBackColor = true;
+            this.buttonDemo.Click += new System.EventHandler(this.buttonDemo_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 512);
+            this.Controls.Add(this.buttonDemo);
             this.Controls.Add(this.buttonFigurePaint);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel);
@@ -86,6 +102,7 @@ namespace Chess
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonFigurePaint;
+        private System.Windows.Forms.Button buttonDemo;
     }
 }
 
